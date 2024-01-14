@@ -6,6 +6,7 @@
     <title>Fe ecode</title>
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
 </head>
 <body>
     <div class="bg-[url('/img/background.png')] bg-contain bg-top bg-no-repeat">
@@ -13,5 +14,12 @@
         <%- body %>
         <%- include('partials/footer') %>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+        });
+    </script>
 </body>
 </html>
