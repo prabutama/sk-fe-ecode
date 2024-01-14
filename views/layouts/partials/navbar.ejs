@@ -45,7 +45,8 @@
                 <button class="p-2 px-3 bg-[#DB1A5A] text-white rounded-md font-medium text-sm md:text-base duration-300">Start your project</button>
             </div>
             <div>
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                <ion-icon id="menu" onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                <img onclick="onToggleMenu(this)" name="close" class="w-[6%] absolute top-6 rigth-0 hidden" src="/img/close.svg" alt="...">
             </div>
         </div>
     </nav>
@@ -61,7 +62,7 @@
         e.name = e.name === 'menu' ? 'close' : 'menu'
         navLinks.classList.toggle('scale-100');
         startYourProject.classList.toggle('scale-0');
-        header.classList.toggle('bg-white');
+        header.classList.add('bg-white');
     };
 
     window.addEventListener('scroll', function() {

@@ -26,7 +26,7 @@
         </div>
     </section>
 
-    <section class="bg-[#F6F6F6] pt-20">
+    <section class="bg-[#FFFFFF] md:bg-[#F6F6F6] pt-20">
         <div class="container mx-auto">
             <p class="text-center text-xl md:text-3xl font-semibold">Trusted by <span class="text-[#DB1A5A]">tech giants</span> no cap 🔥</p>
             <div class="flex flex-wrap justify-center mx-auto gap-5 md:gap-20 mt-5 md:mt-10 items-center">
@@ -58,11 +58,11 @@
         </div>
     </section>
 
-    <section class="bg-[#F6F6F6] pt-20 md:pt-28 px-4 lg:px-0">
+    <section class="bg-[#FFFFFF] md:bg-[#F6F6F6] pt-20 md:pt-28 px-4 lg:px-0">
         <div class="container mx-auto">
             <p class="text-center text-lg md:text-3xl font-semibold">asyncbase offers a <span class="text-[#DB1A5A]">range of features 😎</span></p>
             <div class="md:flex justify-center gap-10 mt-10 md:mt-16">
-                <div class="w-[10%] relative hidden md:block">
+                <div class="w-[5%] relative hidden md:block">
                     <img class="absolute" src="/img/circle-database.png" alt="circle-database">
                     <img class="absolute left-2.5 top-2" src="/img/line-database.png" alt="line-database">
                 </div>
@@ -87,14 +87,14 @@
                     </div>
                 </div>
                 <div class="w-full md:w-[50%]">
-                    <div>
+                    <div class="md:ms-20">
                         <img src="/img/database-img.svg" alt="database">
                     </div>
                 </div>
             </div>
 
             <div class="md:flex justify-center gap-10 mt-10 md:mt-16">
-                <div class="w-[10%] relative hidden md:block">
+                <div class="w-[5%] relative hidden md:block">
                     <img class="absolute" src="/img/circle-authentication.png" alt="circle-authentication">
                     <img class="absolute left-2.5 top-2" src="/img/line-authentication.png" alt="line-authentication">
                 </div>
@@ -119,14 +119,14 @@
                     </div>
                 </div>
                 <div class="w-full md:w-[50%]">
-                    <div>
+                    <div class="md:ms-20">
                         <img src="/img/authentication-img.svg" alt="authentication-img">
                     </div>
                 </div>
             </div>
 
             <div class="md:flex justify-center gap-10 mt-10 md:mt-16">
-                <div class="w-[10%] relative hidden md:block">
+                <div class="w-[5%] relative hidden md:block">
                     <img class="absolute" src="/img/circle-function.png" alt="circle-function">
                 </div>
                 <div class="w-full md:w-[50%] mb-4 md:mb-0">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="w-full md:w-[40%]">
-                    <div>
+                    <div class="md:ms-20">
                         <img src="/img/function-img.svg" alt="authentication-img">
                     </div>
                 </div>
@@ -158,7 +158,7 @@
         </div>
     </section>
 
-    <section class="bg-[#F6F6F6] pt-12 md:pt-28 px-4 lg:px-0">
+    <section class="bg-[#FFFFFF] md:bg-[#F6F6F6] pt-12 md:pt-28 px-4 lg:px-0">
         <div class="mx-auto container">
             <div class="md:flex justify-center gap-5 md:mt-16">
                 <div class="w-full md:w-[50%] mb-4 md:mb-0">
@@ -178,7 +178,7 @@
                     </div>
                 </div>
                 <div class="w-full md:w-[50%]">
-                    <div class="mx-auto">
+                    <div class="mx-auto md:ms-24">
                         <img src="/img/works.svg" alt="authentication-img">
                     </div>
                 </div>
@@ -186,7 +186,7 @@
         </div>
     </section>
 
-    <section class="pt-5 md:pt-28 bg-[#F6F6F6]">
+    <section class="pt-5 md:pt-28 bg-[#FFFFFF] md:bg-[#F6F6F6]">
         <div class="mx-auto md:bg-[url('/img/start-bg.png')] bg-center bg-no-repeat md:py-40">
             <div class="flex flex-col items-center">
                 <p class="text-lg md:text-4xl font-medium text-center">Start building in <span class="text-[#DB1A5A]">seconds ⚡</span></p>
@@ -195,74 +195,52 @@
         </div>
     </section>
     
-    <section>
-        <div class="pt-5 md:pt-28 bg-[#F6F6F6]">
+    <section class="bg-[#FFFFFF] md:bg-[#F6F6F6]">
+        <div class="pt-5 md:pt-28">
             <p class="text-lg md:text-4xl font-medium text-center">Let’s read from our satisfied <span class="text-[#DB1A5A] block md:inline">#asyncomrades 🤝</span></p>
         </div>
-        <div class="flex flex-wrap gap-10 justify-center mt-10">
-            <div class="border-2 rounded-md w-[350px] p-4">
-                <div class="flex justify-evenly gap-3 items-center">
-                    <img class="rounded-full" src="/img/devprobella23.png" alt="devprobella23.png">
-                    <p class="font-medium">@DevProBella23</p>
-                    <img src="/img/x.png" alt="...">
-                </div>
-                <p class="text-md mt-4">Thanks to AsyncBase, our development team has experienced a significant boost in productivity! Highly recommend this backend as a service platform. #AsyncBase #DeveloperTools</p>
+        <div class="relative">
+            <div id="feedback-container" class="flex flex-wrap gap-2 md:gap-5 justify-center mt-16 md:px-10 h-[450px] md:h-auto overflow-hidden">
+                <% for (let feedback of feedbacks ) { %>
+                    <div class="border-2 rounded-md bg-white p-2 md:p-4 md:w-[20%] w-[45%] h-fit relative">
+                        <div class="flex justify-start items-center">
+                            <img class="rounded-full w-[11%] md:w-[10%] me-1 md:me-4" src="<%= feedback.img %>" alt="<%= feedback.img %>">
+                            <p class="font-medium text-xs md:text-base"><%= feedback.name %></p>
+                            <img class="w-[10%] md:w-[8%] absolute right-2 md:right-4" src="/img/x.png" alt="...">
+                        </div>
+                        <div>
+                            <p class="text-xs md:text-sm mt-4 font-medium text-justify text-[#5D646D]"><%= feedback.message %></p>
+                        </div>
+                    </div>
+                <% } %>
             </div>
-            <div class="border-2 rounded-md bg-white w-[350px] p-4">
-                <div class="flex justify-evenly gap-3 items-center">
-                    <img class="rounded-full" src="/img/devprobella23.png" alt="devprobella23.png">
-                    <p class="font-medium">@DevProBella23</p>
-                    <img src="/img/x.png" alt="...">
-                </div>
-                <p class="text-md mt-4">Thanks to AsyncBase, our development team has experienced a significant boost in productivity! Highly recommend this backend as a service platform. #AsyncBase #DeveloperTools</p>
+            <div id="shadow" class="absolute inset-0 md:hidden" style="background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);">
             </div>
-            <div class="border-2 rounded-md bg-white w-[350px] p-4">
-                <div class="flex justify-evenly gap-3 items-center">
-                    <img class="rounded-full" src="/img/devprobella23.png" alt="devprobella23.png">
-                    <p class="font-medium">@DevProBella23</p>
-                    <img src="/img/x.png" alt="...">
-                </div>
-                <p class="text-md mt-4">Thanks to AsyncBase, our development team has experienced a significant boost in productivity! Highly recommend this backend as a service platform. #AsyncBase #DeveloperTools</p>
-            </div>
-            <div class="border-2 rounded-md bg-white w-[350px] p-4">
-                <div class="flex justify-evenly gap-3 items-center">
-                    <img class="rounded-full" src="/img/devprobella23.png" alt="devprobella23.png">
-                    <p class="font-medium">@DevProBella23</p>
-                    <img src="/img/x.png" alt="...">
-                </div>
-                <p class="text-md mt-4">Thanks to AsyncBase, our development team has experienced a significant boost in productivity! Highly recommend this backend as a service platform. #AsyncBase #DeveloperTools</p>
-            </div>
-            <div class="border-2 rounded-md bg-white w-[350px] p-4">
-                <div class="flex justify-evenly gap-3 items-center">
-                    <img class="rounded-full" src="/img/devprobella23.png" alt="devprobella23.png">
-                    <p class="font-medium">@DevProBella23</p>
-                    <img src="/img/x.png" alt="...">
-                </div>
-                <p class="text-md mt-4">Thanks to AsyncBase, our development team has experienced a significant boost in productivity! Highly recommend this backend as a service platform. #AsyncBase #DeveloperTools</p>
-            </div>
-            <div class="border-2 rounded-md bg-white w-[350px] p-4">
-                <div class="flex justify-evenly gap-3 items-center">
-                    <img class="rounded-full" src="/img/devprobella23.png" alt="devprobella23.png">
-                    <p class="font-medium">@DevProBella23</p>
-                    <img src="/img/x.png" alt="...">
-                </div>
-                <p class="text-md mt-4">Thanks to AsyncBase, our development team has experienced a significant boost in productivity! Highly recommend this backend as a service platform. #AsyncBase #DeveloperTools</p>
-            </div>
-            <div class="border-2 rounded-md bg-white w-[350px] p-4">
-                <div class="flex justify-evenly gap-3 items-center">
-                    <img class="rounded-full" src="/img/devprobella23.png" alt="devprobella23.png">
-                    <p class="font-medium">@DevProBella23</p>
-                    <img src="/img/x.png" alt="...">
-                </div>
-                <p class="text-md mt-4">Thanks to AsyncBase, our development team has experienced a significant boost in productivity! Highly recommend this backend as a service platform. #AsyncBase #DeveloperTools</p>
-            </div>
-            <div class="border-2 rounded-md bg-white w-[350px] p-4">
-                <div class="flex justify-evenly gap-3 items-center">
-                    <img class="rounded-full" src="/img/devprobella23.png" alt="devprobella23.png">
-                    <p class="font-medium">@DevProBella23</p>
-                    <img src="/img/x.png" alt="...">
-                </div>
-                <p class="text-md mt-4">Thanks to AsyncBase, our development team has experienced a significant boost in productivity! Highly recommend this backend as a service platform. #AsyncBase #DeveloperTools</p>
+            <div id="btn-see-more" class="p-1 px-3 rounded-md border-2 border-[#BCC6D2] scale-90 md:scale-100 absolute md:hidden right-[38%] bottom-5 qursor-pointer">
+                <a class="text-[#4A4A4A] font-semibold duration-300"></i>See More</a>
             </div>
         </div>
     </section>
+
+    <section class="bg-[#FFFFFF] md:bg-[#F6F6F6] py-20">
+        <div class="mx-auto container">
+            <p class="text-lg md:text-4xl font-medium text-center block">Develop like a whole <span class="text-[#DB1A5A] block md:inline">IT Department 🤙</span></p>
+            <div class="p-2 px-3 rounded-md bg-[#DB1A5A] w-fit mx-auto mt-5">
+                <a class="text-white font-medium duration-200 tacxrs">Start Your Project Now</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const btnSeeMore = document.querySelector('#btn-see-more');
+        const feedBackContainer = document.querySelector('#feedback-container');
+        const shadow = document.querySelector('#shadow');
+
+        btnSeeMore.addEventListener('click', () => {
+            feedBackContainer.classList.toggle('h-auto');
+            shadow.classList.toggle('opacity-0');
+            btnSeeMore.classList.add('hidden');
+        })
+
+    </script>
