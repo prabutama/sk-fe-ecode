@@ -675,10 +675,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -689,26 +685,6 @@ video {
 
 .mt-\[95\%\] {
   margin-top: 95%;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
-.ms-3 {
-  margin-inline-start: 0.75rem;
-}
-
-.-mt-2 {
-  margin-top: -0.5rem;
-}
-
-.-mt-3 {
-  margin-top: -0.75rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .block {
@@ -784,6 +760,10 @@ video {
   width: 5%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .w-\[6\%\] {
   width: 6%;
 }
@@ -803,22 +783,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .grow {
@@ -875,6 +839,10 @@ video {
   justify-content: space-evenly;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -893,10 +861,6 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .overflow-hidden {
@@ -1157,19 +1121,6 @@ video {
   transition-duration: 300ms;
 }
 
-.hover\:bg-\[DB005B\]:hover {
-  background-color: DB005B;
-}
-
-.hover\:bg-\[\#DB005B\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 0 91 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[E90064\]:hover {
-  background-color: E90064;
-}
-
 .hover\:bg-\[\#E90064\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(233 0 100 / var(--tw-bg-opacity));
@@ -1193,6 +1144,10 @@ video {
     top: 0px;
   }
 
+  .md\:-mt-3 {
+    margin-top: -0.75rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1213,6 +1168,10 @@ video {
     margin-inline-start: 6rem;
   }
 
+  .md\:ms-3 {
+    margin-inline-start: 0.75rem;
+  }
+
   .md\:ms-5 {
     margin-inline-start: 1.25rem;
   }
@@ -1227,14 +1186,6 @@ video {
 
   .md\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .md\:-mt-3 {
-    margin-top: -0.75rem;
-  }
-
-  .md\:ms-3 {
-    margin-inline-start: 0.75rem;
   }
 
   .md\:block {
@@ -1268,6 +1219,10 @@ video {
 
   .md\:w-\[10\%\] {
     width: 10%;
+  }
+
+  .md\:w-\[100\%\] {
+    width: 100%;
   }
 
   .md\:w-\[20\%\] {
@@ -1312,14 +1267,6 @@ video {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-\[\] {
-    width: ;
-  }
-
-  .md\:w-\[100\%\] {
-    width: 100%;
   }
 
   .md\:scale-100 {
